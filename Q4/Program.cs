@@ -22,13 +22,10 @@ namespace Q4
             {
                 for (int k = 0; k <=33; k++)
                 {
-                    for (int m = 0; m <=100; m++)
-                    {
-                        if(i*5+k*3+m/3 ==100 && i + k + m == 100)
-                        {
-                            Console.WriteLine($"公雞數量為{i} 母雞數量為{k}小雞數量為{m}");
-                        }
-                    }
+                  if(i*5+k*3+(double)(100-i-k)/3 ==100 )
+                  {
+                        Console.WriteLine($"公雞數量為{i} 母雞數量為{k}小雞數量為{100-i-k}");
+                  }
                 }
             }
 
